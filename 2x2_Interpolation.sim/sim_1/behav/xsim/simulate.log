@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Error: File ../haha_image.txt is already at the end of file, nothing to read
+Time: 17507700 ns  Iteration: 0  Process: /tb_interpolation/line__127  File: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd
+Error: STD_LOGIC_1164.HREAD End of string encountered
+Time: 17507700 ns  Iteration: 0  Process: /tb_interpolation/line__127  File: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd
+Error: File ../haha_image.txt is already at the end of file, nothing to read
+Time: 17507740 ns  Iteration: 0  Process: /tb_interpolation/line__127  File: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd
+Error: STD_LOGIC_1164.HREAD End of string encountered
+Time: 17507740 ns  Iteration: 0  Process: /tb_interpolation/line__127  File: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd
+ERROR: File ../haha_image.txt could not be opened.
+Time: 17507780 ns  Iteration: 0  Process: /tb_interpolation/line__127
+  File: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd
+
+HDL Line: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:135

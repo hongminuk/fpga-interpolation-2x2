@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd" \
+"../../../../2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd" \
+"../../../../2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd" \
+
+# Do not sort compile order
+nosort

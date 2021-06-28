@@ -1,0 +1,212 @@
+
+*** Running vivado
+    with args -log tb_interpolation.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_interpolation.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source tb_interpolation.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1111.391 ; gain = 0.000
+Command: synth_design -top tb_interpolation -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28680
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1111.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tb_interpolation' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:14]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable function call [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:65]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:66]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:75]
+INFO: [Synth 8-3491] module 'interpolation_2x2' declared at 'C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:7' bound to instance 'u0' of component 'interpolation_2x2' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'interpolation_2x2' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:25]
+WARNING: [Synth 8-614] signal 'p_data_buffer1' is read in the process but is not in the sensitivity list [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:264]
+WARNING: [Synth 8-614] signal 'p_data_buffer2' is read in the process but is not in the sensitivity list [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:264]
+WARNING: [Synth 8-614] signal 'p_data_buffer3' is read in the process but is not in the sensitivity list [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:264]
+WARNING: [Synth 8-614] signal 'p_data_buffer4' is read in the process but is not in the sensitivity list [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:264]
+INFO: [Synth 8-3491] module 'sync_dpram' declared at 'C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd:6' bound to instance 'u0' of component 'sync_dpram' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:305]
+INFO: [Synth 8-638] synthesizing module 'sync_dpram' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd:20]
+WARNING: [Synth 8-614] signal 'waddr' is read in the process but is not in the sensitivity list [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd:27]
+WARNING: [Synth 8-614] signal 'raddr' is read in the process but is not in the sensitivity list [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sync_dpram' (1#1) [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd:20]
+INFO: [Synth 8-3491] module 'sync_dpram' declared at 'C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/sync_dpram.vhd:6' bound to instance 'u1' of component 'sync_dpram' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:320]
+INFO: [Synth 8-256] done synthesizing module 'interpolation_2x2' (2#1) [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'tb_interpolation' (3#1) [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/tb_interpolation.vhd:14]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1111.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1111.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1111.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'output_sync_reg' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:270]
+WARNING: [Synth 8-327] inferring latch for variable 'R_temp_reg' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:267]
+WARNING: [Synth 8-327] inferring latch for variable 'G_temp_reg' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:268]
+WARNING: [Synth 8-327] inferring latch for variable 'B_temp_reg' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:269]
+WARNING: [Synth 8-327] inferring latch for variable 'p_data_buffer4_reg' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:231]
+WARNING: [Synth 8-327] inferring latch for variable 'p_data_buffer2_reg' [C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.srcs/sources_1/imports/HW/interpolation_2x2.vhd:233]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1111.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               5K Bit	(641 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1113.961 ; gain = 2.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1113.961 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1227.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 1227.777 ; gain = 116.387
+INFO: [Common 17-1381] The checkpoint 'C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.runs/synth_1/tb_interpolation.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tb_interpolation_utilization_synth.rpt -pb tb_interpolation_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 27 11:38:22 2021...

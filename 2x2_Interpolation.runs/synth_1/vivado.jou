@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 11:36:31 2021
+# Process ID: 23612
+# Current directory: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.runs/synth_1
+# Command line: vivado.exe -log tb_interpolation.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_interpolation.tcl
+# Log file: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.runs/synth_1/tb_interpolation.vds
+# Journal file: C:/workspace/ImageProcessing/2x2_Interpolation/2x2_Interpolation.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tb_interpolation.tcl -notrace
